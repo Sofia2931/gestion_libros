@@ -2,7 +2,7 @@
 include "../conn/db.php";
 session_start();
 
-
+//Funcion para obtener y guardar el libro en una session
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
     $id=$_GET["id"];
@@ -17,14 +17,14 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
             "precio" => $row["precio"],
             "cantidad" => $row["cantidad"]
         );
-        $_SESSION['libroArray'] = $libroArray; // Guardar en sesión
-        header("Location: ../../pages/update.php");
+        $_SESSION['libroArray'] = $libroArray;
+        header("Location: ../pages/update.php");
         exit();
     } else {
-        header("Location: ../../index.php");
+        header("Location: ../index.php");
         exit();
     }
-    // Preparar la consulta SQL para actualizar
+    
     // Cerrar conexión
     $conn->close();
 }

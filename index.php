@@ -64,8 +64,8 @@ include "functions/read.php";
                 <td><?php echo htmlspecialchars($libro['precio']); ?></td>
                 <td><?php echo htmlspecialchars($libro['cantidad']); ?></td>
                 <td>
-                    <a href="functions/crud/update.php?id=<?php echo $libro['id']; ?>">Editar</a> |
-                    <a href="functions/crud/delete.php?id=<?php echo $libro['id']; ?>">Eliminar</a>
+                    <a href="functions/update.php?id=<?php echo $libro['id']; ?>">Editar</a> |
+                    <a href="functions/delete.php?id=<?php echo $libro['id']; ?>">Eliminar</a>
                 </td>
             </tr>
         <?php endforeach; ?>
