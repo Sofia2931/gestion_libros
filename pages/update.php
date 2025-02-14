@@ -49,7 +49,7 @@ if (isset($_SESSION['libroArray'])) {
                 </div>
 
                 <h2>Actualizar Libros</h2>
-                
+                <!-- Creo el formulario con metodo POST y su accion para registrar un nuevo libro -->
                     <form method="post" class="row g-3" action="../functions/create.php">
                          <input type="text" class="form-control" id="id" name="id" value="<?php echo $libroArray['id']; ?>" hidden>
                         <div class="col-md-6">
