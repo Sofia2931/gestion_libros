@@ -40,7 +40,7 @@ El uso de sesiones se utiliza para poder obtener el id correspondiente y poder m
 ## Uso
 1. Inicia el servidor web XAMMP:
 
-2. Abre tu navegador y navega a al `http://localhost:8000` dependiendo del puerto que hayas abierto.
+2. Abre tu navegador y navega a al `http://localhost/gestion_libros/` dependiendo del puerto que hayas abierto.
 
 ## Estructura del Proyecto
 - `index.php`: Página principal del sistema.
